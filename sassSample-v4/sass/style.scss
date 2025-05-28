@@ -1,0 +1,19 @@
+@mixin panel($size){
+	width: $size;
+    border: 1px solid black;
+	@if $size < 700px{
+		border-radius: 5px;
+		padding: 10px;
+	}
+	@else{
+		border-radius: 10px;
+		padding: 20px;
+	}
+}
+
+.panel-md{
+	@include panel(500px);
+}
+.panel-lg{
+	@include panel(900px);
+}

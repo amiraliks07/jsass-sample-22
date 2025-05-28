@@ -1,0 +1,17 @@
+$colorMode: "light";
+@mixin buttonMode($mode){
+	
+    
+	@if $mode == "dark"{
+		background-color: black;
+		color: white;
+	}
+	@else{
+		background-color: white;
+		color: blak;
+	}
+}
+
+.btnMode{
+	@include buttonMode($colorMode);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input id="uname"  type="text"  placeholder="username"><br>
+        <input id="psw"  type="text"  placeholder="password"><br>
+        <button onclick="getUname()">login</button>
+    </form>
+    <script>
+        function getUname() {
+            debugger
+            var uname=document.getElementById("uname").value; 
+            var password=document.getElementById("psw").value; 
+            if(uname=="omid"){
+                if (password=="123") {
+                    alert("welcome!");
+                }else{
+                    alert("wrong username or password");
+                }
+                
+            }else{
+                alert("wrong username or password");
+            }
+        }
+    
+    </script>
+</body>
+</html>

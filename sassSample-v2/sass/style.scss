@@ -1,0 +1,11 @@
+@import 'mixins';
+  
+  .danger {
+    @include important-text;
+    background-color: green;
+  } 
+  
+  .warning{
+    @include important-text;
+    background-color: gray;
+  }
